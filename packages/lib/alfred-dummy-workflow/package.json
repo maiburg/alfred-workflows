@@ -1,0 +1,36 @@
+{
+  "name": "@maiburg/alred-dummy-workflow",
+  "version": "0.0.0",
+  "description": "Dummy workflow",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maiburg/alfred-workflows.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maiburg/alfred-workflows/issues"
+  },
+  "homepage": "https://github.com/maiburg/alfred-workflows/tree/main/packages/alfred-simple-notes#readme",
+  "author": {
+    "name": "Alex Maiburg",
+    "email": "alex@maiburg.com",
+    "url": "alex.maiburg.com"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist"
+  ],
+  "type": "module",
+  "scripts": {
+    "test": "ava",
+    "postinstall": "node ./node_modules/alfy/init.js",
+    "preuninstall": "node ./node_modules/alfy/cleanup.js"
+  },
+  "dependencies": {
+    "alfy": "^1.1.0",
+    "lib": "workspace:*"
+  }
+}
