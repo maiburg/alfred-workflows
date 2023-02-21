@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.maiburg.alfred-dasher</string>
-	<key>category</key>
-	<string>Productivity</string>
+	<string>com.maiburg.alfred-simple-notes</string>
 	<key>connections</key>
 	<dict>
 		<key>034D5DBD-5A32-451D-95B9-27F954F7AF6A</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1AE5FAFD-5C6F-425E-90CC-3434A7C6C482</string>
+				<string>1D452288-F92D-4F7C-B50E-E57000ED3A63</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -21,7 +19,7 @@
 				<false/>
 			</dict>
 		</array>
-		<key>1AE5FAFD-5C6F-425E-90CC-3434A7C6C482</key>
+		<key>1D452288-F92D-4F7C-B50E-E57000ED3A63</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -33,9 +31,12 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+		</array>
+		<key>5A44882A-3735-4031-8F40-B15256045B2F</key>
+		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>14EF453B-18FA-4C72-90C4-C44EFCEF8196</string>
+				<string>1D452288-F92D-4F7C-B50E-E57000ED3A63</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -48,11 +49,11 @@
 	<key>createdby</key>
 	<string>Alex Maiburg</string>
 	<key>description</key>
-	<string>Converts a camelcase or space-separated string to a dash-separated, alpha-numeric string.</string>
+	<string>Add quick notes to a simple text file</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>alfred-dasher</string>
+	<string>Alfred Simple Notes</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -67,11 +68,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>35</integer>
+				<integer>46</integer>
 				<key>hotmod</key>
 				<integer>1703936</integer>
 				<key>hotstring</key>
-				<string>P</string>
+				<string>M</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -110,51 +111,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
+				<key>concurrently</key>
 				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
 				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>dasher</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
 				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>2</integer>
-				<key>runningsubtext</key>
-				<string>Searching...</string>
 				<key>script</key>
 				<string>./node_modules/.bin/run-node index.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>index.js</string>
-				<key>subtext</key>
 				<string></string>
-				<key>title</key>
-				<string>dasher</string>
 				<key>type</key>
 				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>1AE5FAFD-5C6F-425E-90CC-3434A7C6C482</string>
+			<string>1D452288-F92D-4F7C-B50E-E57000ED3A63</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -175,6 +150,27 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>.nv</string>
+				<key>subtext</key>
+				<string>Add a NOTE to {var:fileName} file</string>
+				<key>text</key>
+				<string>Notes</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>5A44882A-3735-4031-8F40-B15256045B2F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -183,23 +179,23 @@
 		<key>034D5DBD-5A32-451D-95B9-27F954F7AF6A</key>
 		<dict>
 			<key>xpos</key>
-			<real>60</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>45</real>
+			<real>50</real>
 		</dict>
 		<key>14EF453B-18FA-4C72-90C4-C44EFCEF8196</key>
 		<dict>
 			<key>xpos</key>
-			<real>625</real>
+			<real>590</real>
 			<key>ypos</key>
-			<real>255</real>
+			<real>195</real>
 		</dict>
-		<key>1AE5FAFD-5C6F-425E-90CC-3434A7C6C482</key>
+		<key>1D452288-F92D-4F7C-B50E-E57000ED3A63</key>
 		<dict>
 			<key>xpos</key>
-			<real>285</real>
+			<real>290</real>
 			<key>ypos</key>
-			<real>50</real>
+			<real>150</real>
 		</dict>
 		<key>4FB006EA-44E1-4B1D-84DD-7DD75D1B45AD</key>
 		<dict>
@@ -208,12 +204,19 @@
 			<key>ypos</key>
 			<real>50</real>
 		</dict>
+		<key>5A44882A-3735-4031-8F40-B15256045B2F</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>250</real>
+		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
 	<array/>
 	<key>version</key>
 	<string>0.2.1</string>
 	<key>webaddress</key>
-	<string>https://github.com/maiburg/alfred-workflows/tree/main/packages/alfred-dasher#readme</string>
+	<string>https://github.com/maiburg/alfred-workflows/tree/main/packages/alfred-simple-notes#readme</string>
 </dict>
 </plist>

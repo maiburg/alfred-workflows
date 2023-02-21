@@ -38,7 +38,10 @@ importers:
       lib: link:../lib
 
   packages/lib:
-    specifiers: {}
+    specifiers:
+      pify: ^6.1.0
+    dependencies:
+      pify: 6.1.0
 
 packages:
 
@@ -3714,6 +3717,11 @@ packages:
   /pify/3.0.0:
     resolution: {integrity: sha512-C3FsVNH1udSEX48gGX1xfvwTWfsYWj5U+8/uK15BGzIGrKoUpghX8hWZwa/OFnakBiiVNmBvemTJR5mcy7iPcg==}
     engines: {node: '>=4'}
+    dev: false
+
+  /pify/6.1.0:
+    resolution: {integrity: sha512-KocF8ve28eFjjuBKKGvzOBGzG8ew2OqOOSxTTZhirkzH7h3BI1vyzqlR0qbfcDBve1Yzo3FVlWUAtCRrbVN8Fw==}
+    engines: {node: '>=14.16'}
     dev: false
 
   /pinkie-promise/2.0.1:

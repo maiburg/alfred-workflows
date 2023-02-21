@@ -9,5 +9,8 @@
     "index.js"
   ],
   "type": "module",
-  "scripts": {}
+  "scripts": {},
+  "dependencies": {
+    "pify": "^6.1.0"
+  }
 }

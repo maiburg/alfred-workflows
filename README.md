@@ -15,7 +15,7 @@ This project contains a main (root) package and two sub-packages under the `pack
     ├───packages
     │   ├───a                Sub-package a.
     │   └───b                Sub-package b.
-    └───index.js            Code file for the root package.
+    └───index.ts            Code file for the root package.
 ```
 
 ## Setup
