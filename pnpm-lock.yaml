@@ -25,10 +25,10 @@ importers:
 
   packages/alfred-dasher:
     specifiers:
-      alfy: ^1.1.0
+      alfy: ../../node_modules/alfy
       dashify: ^2.0.0
     dependencies:
-      alfy: 1.1.0
+      alfy: link:../../node_modules/alfy
       dashify: 2.0.0
 
 packages:
