@@ -1,0 +1,13 @@
+{
+  "name": "lib",
+  "version": "0.1.1",
+  "description": "test",
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "type": "module",
+  "scripts": {}
+}

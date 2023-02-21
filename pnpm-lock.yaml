@@ -5,18 +5,12 @@ importers:
   .:
     specifiers:
       '@maiburg/alfred-dasher': workspace:*
-      alfy: ^1.1.0
       alfy-test: ^0.3.0
       ava: ^5.2.0
-      dashify: ^2.0.0
-      dayjs: ^1.11.2
       prettier: ^2.8.4
       xo: ^0.53.1
     dependencies:
       '@maiburg/alfred-dasher': link:packages/alfred-dasher
-      alfy: 1.1.0
-      dashify: 2.0.0
-      dayjs: 1.11.2
     devDependencies:
       alfy-test: 0.3.0
       ava: 5.2.0
@@ -25,11 +19,16 @@ importers:
 
   packages/alfred-dasher:
     specifiers:
-      alfy: ../../node_modules/alfy
+      alfy: ^1.1.0
       dashify: ^2.0.0
+      lib: workspace:*
     dependencies:
-      alfy: link:../../node_modules/alfy
+      alfy: 1.1.0
       dashify: 2.0.0
+      lib: link:../lib
+
+  packages/lib:
+    specifiers: {}
 
 packages:
 
@@ -1245,10 +1244,6 @@ packages:
     dependencies:
       time-zone: 1.0.0
     dev: true
-
-  /dayjs/1.11.2:
-    resolution: {integrity: sha512-F4LXf1OeU9hrSYRPTTj/6FbO4HTjPKXvEIC1P2kcnFurViINCVk3ZV0xAS3XVx9MkMsXbbqlK6hjseaYbgKEHw==}
-    dev: false
 
   /debounce-fn/4.0.0:
     resolution: {integrity: sha512-8pYCQiL9Xdcg0UPSD3d+0KMlOjp+KGU5EPwYddgzQ7DATsg4fuUDjQtsYLmWjnk2obnNHgV3vE2Y4jejSOJVBQ==}

@@ -1,6 +1,6 @@
 {
   "name": "@maiburg/alfred-dasher",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "Converts a camelcase or space-separated string to a dash-separated, alpha-numeric string.",
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "alfy": "^1.1.0",
-    "dashify": "^2.0.0"
+    "dashify": "^2.0.0",
+    "lib": "workspace:*"
   }
 }
