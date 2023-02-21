@@ -1,19 +1,24 @@
 {
-  "name": "basic",
+  "name": "@maiburg/alfred-workflows",
   "version": "1.0.0",
-  "description": "The most basic example of a pnpm workspace in a multi-package mono repo.",
-  "main": "index.js",
-  "scripts": {
-    "preinstall": "npx only-allow pnpm"
+  "description": "Alfred workflows monorepo of Maiburg",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maiburg/alfred-workflows.git"
   },
+  "bugs": {
+    "url": "https://github.com/maiburg/alfred-workflows/issues"
+  },
+  "homepage": "https://github.com/maiburg/alfred-workflows#readme",
+  "author": "Alex Maiburg <alex@maiburg.com>",
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
   "files": [
     "index.js"
   ],
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
-    "alfred-dasher": "workspace:*",
+    "@maiburg/alfred-dasher": "workspace:*",
     "dayjs": "^1.11.2",
     "alfy": "^1.1.0",
     "dashify": "^2.0.0"

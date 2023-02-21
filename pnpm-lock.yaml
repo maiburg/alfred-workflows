@@ -4,7 +4,7 @@ importers:
 
   .:
     specifiers:
-      alfred-dasher: workspace:*
+      '@maiburg/alfred-dasher': workspace:*
       alfy: ^1.1.0
       alfy-test: ^0.3.0
       ava: ^5.2.0
@@ -13,7 +13,7 @@ importers:
       prettier: ^2.8.4
       xo: ^0.53.1
     dependencies:
-      alfred-dasher: link:packages/alfred-dasher
+      '@maiburg/alfred-dasher': link:packages/alfred-dasher
       alfy: 1.1.0
       dashify: 2.0.0
       dayjs: 1.11.2
@@ -24,7 +24,12 @@ importers:
       xo: 0.53.1_webpack@5.75.0
 
   packages/alfred-dasher:
-    specifiers: {}
+    specifiers:
+      alfy: ^1.1.0
+      dashify: ^2.0.0
+    dependencies:
+      alfy: 1.1.0
+      dashify: 2.0.0
 
 packages:
 

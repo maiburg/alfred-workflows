@@ -1,7 +1,18 @@
 {
-  "name": "alfred-dasher",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@maiburg/alfred-dasher",
+  "version": "0.2.0",
+  "description": "Converts a camelcase or space-separated string to a dash-separated, alpha-numeric string.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maiburg/alfred-workflows.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maiburg/alfred-workflows/issues"
+  },
+  "homepage": "https://github.com/maiburg/alfred-workflows/tree/main/packages/alfred-dasher#readme",
+  "author": "Alex Maiburg <alex@maiburg.com>",
+  "keywords": [],
+  "license": "MIT",
   "main": "index.js",
   "files": [
     "index.js",
@@ -10,12 +21,10 @@
   ],
   "type": "module",
   "scripts": {
-    "test": "ava",
-    "start": "node index.js",
-    "postinstall": "alfy-init",
-    "preuninstall": "alfy-cleanup"
+    "test": "ava"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "alfy": "^1.1.0",
+    "dashify": "^2.0.0"
+  }
 }
