@@ -52,40 +52,9 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>alfred-dasher</string>
+	<string>Alfred Dasher</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>1</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>35</integer>
-				<key>hotmod</key>
-				<integer>1703936</integer>
-				<key>hotstring</key>
-				<string>P</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>034D5DBD-5A32-451D-95B9-27F954F7AF6A</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -106,6 +75,37 @@
 			<string>4FB006EA-44E1-4B1D-84DD-7DD75D1B45AD</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>2</integer>
+				<key>hotmod</key>
+				<integer>1703936</integer>
+				<key>hotstring</key>
+				<string>D</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>034D5DBD-5A32-451D-95B9-27F954F7AF6A</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -183,30 +183,30 @@
 		<key>034D5DBD-5A32-451D-95B9-27F954F7AF6A</key>
 		<dict>
 			<key>xpos</key>
-			<real>60</real>
+			<real>65</real>
 			<key>ypos</key>
-			<real>45</real>
+			<real>145</real>
 		</dict>
 		<key>14EF453B-18FA-4C72-90C4-C44EFCEF8196</key>
 		<dict>
 			<key>xpos</key>
-			<real>625</real>
+			<real>590</real>
 			<key>ypos</key>
-			<real>255</real>
+			<real>245</real>
 		</dict>
 		<key>1AE5FAFD-5C6F-425E-90CC-3434A7C6C482</key>
 		<dict>
 			<key>xpos</key>
-			<real>285</real>
+			<real>290</real>
 			<key>ypos</key>
-			<real>50</real>
+			<real>145</real>
 		</dict>
 		<key>4FB006EA-44E1-4B1D-84DD-7DD75D1B45AD</key>
 		<dict>
 			<key>xpos</key>
-			<real>585</real>
+			<real>590</real>
 			<key>ypos</key>
-			<real>50</real>
+			<real>45</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
