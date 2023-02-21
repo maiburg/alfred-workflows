@@ -1,6 +1,6 @@
 {
   "name": "@maiburg/alfred-dasher",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Converts a camelcase or space-separated string to a dash-separated, alpha-numeric string.",
   "repository": {
     "type": "git",

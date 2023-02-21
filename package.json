@@ -18,7 +18,8 @@
     "index.js"
   ],
   "dependencies": {
-    "@maiburg/alfred-dasher": "workspace:*"
+    "@maiburg/alfred-dasher": "workspace:*",
+    "alfy": "^1.1.0"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",
