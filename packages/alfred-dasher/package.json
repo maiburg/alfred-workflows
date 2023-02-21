@@ -1,6 +1,6 @@
 {
   "name": "@maiburg/alfred-dasher",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Converts a camelcase or space-separated string to a dash-separated, alpha-numeric string.",
   "repository": {
     "type": "git",
@@ -21,7 +21,9 @@
   ],
   "type": "module",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "postinstall": "node ./node_modules/alfy/init.js",
+    "preuninstall": "node ./node_modules/alfy/cleanup.js"
   },
   "dependencies": {
     "alfy": "^1.1.0",
