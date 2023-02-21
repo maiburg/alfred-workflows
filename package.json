@@ -18,10 +18,7 @@
     "index.js"
   ],
   "dependencies": {
-    "@maiburg/alfred-dasher": "workspace:*",
-    "dayjs": "^1.11.2",
-    "alfy": "^1.1.0",
-    "dashify": "^2.0.0"
+    "@maiburg/alfred-dasher": "workspace:*"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",
