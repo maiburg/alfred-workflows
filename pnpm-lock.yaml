@@ -5,12 +5,14 @@ importers:
   .:
     specifiers:
       '@maiburg/alfred-dasher': workspace:*
+      '@maiburg/alfred-simple-notes': workspace:*
       alfy-test: ^0.3.0
       ava: ^5.2.0
       prettier: ^2.8.4
       xo: ^0.53.1
     dependencies:
       '@maiburg/alfred-dasher': link:packages/alfred-dasher
+      '@maiburg/alfred-simple-notes': link:packages/alfred-simple-notes
     devDependencies:
       alfy-test: 0.3.0
       ava: 5.2.0
@@ -25,6 +27,14 @@ importers:
     dependencies:
       alfy: 1.1.0
       dashify: 2.0.0
+      lib: link:../lib
+
+  packages/alfred-simple-notes:
+    specifiers:
+      alfy: ^1.1.0
+      lib: workspace:*
+    dependencies:
+      alfy: 1.1.0
       lib: link:../lib
 
   packages/lib:

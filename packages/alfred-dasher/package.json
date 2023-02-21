@@ -10,7 +10,11 @@
     "url": "https://github.com/maiburg/alfred-workflows/issues"
   },
   "homepage": "https://github.com/maiburg/alfred-workflows/tree/main/packages/alfred-dasher#readme",
-  "author": "Alex Maiburg <alex@maiburg.com>",
+  "author": {
+    "name": "Alex Maiburg",
+    "email": "alex@maiburg.com",
+    "url": "alex.maiburg.com"
+  },
   "keywords": [],
   "license": "MIT",
   "main": "index.js",

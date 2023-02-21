@@ -10,7 +10,11 @@
     "url": "https://github.com/maiburg/alfred-workflows/issues"
   },
   "homepage": "https://github.com/maiburg/alfred-workflows#readme",
-  "author": "Alex Maiburg <alex@maiburg.com>",
+  "author": {
+    "name": "Alex Maiburg",
+    "email": "alex@maiburg.com",
+    "url": "https://alex.maiburg.com"
+  },
   "keywords": [],
   "license": "MIT",
   "main": "index.js",
@@ -18,7 +22,8 @@
     "index.js"
   ],
   "dependencies": {
-    "@maiburg/alfred-dasher": "workspace:*"
+    "@maiburg/alfred-dasher": "workspace:*",
+    "@maiburg/alfred-simple-notes": "workspace:*"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",
