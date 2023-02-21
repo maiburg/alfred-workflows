@@ -1,18 +1,27 @@
 {
-  "name": "alfred",
-  "version": "0.0.0",
-  "license": "MIT",
-  "scripts": {},
-  "private": true,
-  "dependencies": {},
-  "devDependencies": {
-    "nx": "14.8.6",
-    "@nrwl/cli": "14.8.6",
-    "@nrwl/workspace": "14.8.6",
-    "typescript": "~4.8.2",
-    "prettier": "^2.6.2"
+  "name": "basic",
+  "version": "1.0.0",
+  "description": "The most basic example of a pnpm workspace in a multi-package mono repo.",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm"
   },
-  "workspaces": [
-    "packages/**"
-  ]
+  "files": [
+    "index.js"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "alfred-dasher": "workspace:*",
+    "dayjs": "^1.11.2",
+    "alfy": "^1.1.0",
+    "dashify": "^2.0.0"
+  },
+  "devDependencies": {
+    "alfy-test": "^0.3.0",
+    "ava": "^5.2.0",
+    "prettier": "^2.8.4",
+    "xo": "^0.53.1"
+  }
 }

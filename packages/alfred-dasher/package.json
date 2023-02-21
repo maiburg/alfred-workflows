@@ -1,0 +1,21 @@
+{
+  "name": "alfred-dasher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist"
+  ],
+  "type": "module",
+  "scripts": {
+    "test": "ava",
+    "start": "node index.js",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
