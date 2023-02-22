@@ -6,17 +6,21 @@ importers:
     specifiers:
       '@maiburg/alfred-dasher': workspace:*
       '@maiburg/alfred-simple-notes': workspace:*
+      '@types/node': ^18.14.0
       alfy-test: ^0.3.0
       ava: ^5.2.0
       prettier: ^2.8.4
+      typescript: ^4.9.5
       xo: ^0.53.1
     dependencies:
       '@maiburg/alfred-dasher': link:packages/alfred-dasher
       '@maiburg/alfred-simple-notes': link:packages/alfred-simple-notes
     devDependencies:
+      '@types/node': 18.14.0
       alfy-test: 0.3.0
       ava: 5.2.0
       prettier: 2.8.4
+      typescript: 4.9.5
       xo: 0.53.1_webpack@5.75.0
 
   packages/alfred-dasher:

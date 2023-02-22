@@ -26,11 +26,25 @@
   "type": "module",
   "scripts": {
     "test": "ava",
-    "postinstall": "node ./node_modules/alfy/init.js",
+    "lint": "xo",
+    "postinstall": "tsc && node ./node_modules/alfy/init.js",
     "preuninstall": "node ./node_modules/alfy/cleanup.js"
   },
   "dependencies": {
     "alfy": "^1.1.0",
     "lib": "workspace:*"
+  },
+  "ava": {
+    "extensions": {
+      "ts": "module"
+    },
+    "nodeArguments": [
+      "--loader=ts-node/esm"
+    ]
+  },
+  "xo": {
+    "ignores": "*.js",
+    "space": true,
+    "prettier": true
   }
 }
