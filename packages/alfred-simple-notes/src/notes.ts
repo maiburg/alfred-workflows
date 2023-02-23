@@ -1,4 +1,4 @@
-import { getTimeStamp, writeToFile } from 'lib';
+import { getTimeStamp, writeToFile } from 'alfred-lib';
 
 const getNotes = () => {
   return [

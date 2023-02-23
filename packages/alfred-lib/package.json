@@ -1,0 +1,24 @@
+{
+  "name": "alfred-lib",
+  "version": "0.0.1",
+  "description": "test",
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.ts",
+  "files": [
+    "index.ts"
+  ],
+  "type": "module",
+  "scripts": {
+    "test": "ava",
+    "test:watch": "ava --watch",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "lint": "xo"
+  },
+  "xo": {
+    "ignores": "*.js",
+    "space": true,
+    "prettier": true
+  }
+}

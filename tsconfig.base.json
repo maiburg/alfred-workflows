@@ -8,5 +8,5 @@
     "skipLibCheck": true,
     "types": ["node"]
   },
-  "include": ["**/*.d.ts", "**/*.ts"]
+  "include": ["**/*.d.ts"]
 }

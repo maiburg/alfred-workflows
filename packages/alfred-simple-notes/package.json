@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "alfy": "^1.1.0",
-    "lib": "workspace:*"
+    "alfred-lib": "workspace:*"
   },
   "xo": {
     "ignores": "*.js",

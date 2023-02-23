@@ -1,13 +1,13 @@
-import fs from 'fs';
+import fs, { PathLike } from 'fs';
 import path from 'path';
 
-const fileExists = (file) => fs.existsSync(file);
-const fileHasContent = (file) => {
+const fileExists = (file: PathLike) => fs.existsSync(file);
+const fileHasContent = (file: PathLike) => {
   const stats = fs.statSync(file);
   return stats && stats.size;
 };
 
-const writeToFile = async (filePath, fileName, text) => {
+const writeToFile = async (filePath: string, fileName: string, text: string) => {
   const file = path.join(filePath, fileName);
   text = fileExists(file) && fileHasContent(file) ? `\n${text}` : text;
 
