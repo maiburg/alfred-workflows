@@ -26,12 +26,21 @@
   "type": "module",
   "scripts": {
     "test": "ava",
-    "postinstall": "node ./node_modules/alfy/init.js",
+    "test:watch": "ava --watch",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "lint": "xo",
+    "postinstall": "tsc && node ./node_modules/alfy/init.js",
     "preuninstall": "node ./node_modules/alfy/cleanup.js"
   },
   "dependencies": {
+    "alfred-lib": "workspace:*",
     "alfy": "^1.1.0",
-    "dashify": "^2.0.0",
-    "alfred-lib": "workspace:*"
+    "dashify": "^2.0.0"
+  },
+  "xo": {
+    "ignores": "*.js",
+    "space": true,
+    "prettier": true
   }
 }

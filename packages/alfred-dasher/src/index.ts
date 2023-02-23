@@ -2,7 +2,7 @@ import alfy from 'alfy';
 import dashify from 'dashify';
 
 (() => {
-    const text = alfy.input;
+    const text: string = alfy.input;
     const textReplaced = text
       .replace(/ä/g, 'ae')
       .replace(/ö/g, 'oe')
@@ -12,7 +12,7 @@ import dashify from 'dashify';
       .replace(/Ü/g, 'Ue')
       .replace(/ß/g, 'ss')
       .replace(/[ !"#$%&'()*+,\-.:;<=>?@[\\\]^_`{|}~„“]/g, '-');
-    const dashed = dashify(textReplaced, { condense: true });
+    const dashed: string = dashify(textReplaced, { condense: true });
 
     alfy.output([
         {

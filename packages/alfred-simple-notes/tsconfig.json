@@ -4,5 +4,6 @@
     "rootDir": "src",
     "outDir": "."
   },
+  "include": ["src", "../../*.d.ts"],
   "exclude": ["node_modules", "./*.js"]
 }
