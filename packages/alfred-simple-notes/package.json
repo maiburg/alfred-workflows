@@ -26,11 +26,20 @@
   "type": "module",
   "scripts": {
     "test": "ava",
-    "postinstall": "node ./node_modules/alfy/init.js",
+    "test:watch": "ava --watch",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "lint": "xo",
+    "postinstall": "tsc && node ./node_modules/alfy/init.js",
     "preuninstall": "node ./node_modules/alfy/cleanup.js"
   },
   "dependencies": {
     "alfy": "^1.1.0",
     "lib": "workspace:*"
+  },
+  "xo": {
+    "ignores": "*.js",
+    "space": true,
+    "prettier": true
   }
 }

@@ -7,7 +7,6 @@ import { writeNote } from './notes.js';
   const res = await writeNote(text);
   const subtitle = 'res';
   const arg = title;
-  const icon = { type: 'fileicon', path: '~/Desktop' };
 
-  alfy.output([{ title, subtitle, arg, icon }]);
+  alfy.output([{ title, subtitle, arg }]);
 })();

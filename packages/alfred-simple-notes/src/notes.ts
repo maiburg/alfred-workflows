@@ -15,7 +15,7 @@ const getNotes = () => {
   ];
 };
 
-const writeNote = async (text) => {
+const writeNote = async (text: string) => {
   const filePath = '/Users/alex/Documents';
   const fileName = 'notes.md';
   text = `* ${text} | ${getTimeStamp()}`;
