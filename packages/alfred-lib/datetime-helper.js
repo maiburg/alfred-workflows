@@ -6,8 +6,6 @@ const hours = date.getHours();
 const minutes = date.getMinutes();
 const seconds = date.getSeconds();
 
-const getTimeStamp = () => {
-  return `${day}.${month}.${year} ${hours}:${minutes}:${seconds}`;
+export const datetimeHelper = {
+  timestamp: () => `${day}.${month}.${year} ${hours}:${minutes}:${seconds}`
 };
-
-export { getTimeStamp };

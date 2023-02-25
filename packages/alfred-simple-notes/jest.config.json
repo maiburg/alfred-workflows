@@ -1,0 +1,7 @@
+{
+  "displayName": "alfred-simple-notes",
+  "preset": "../../jest.preset.json",
+  "testEnvironment": "node",
+  "moduleFileExtensions": ["js"],
+  "coverageDirectory": "../../coverage"
+}

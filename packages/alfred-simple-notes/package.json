@@ -25,13 +25,11 @@
   ],
   "type": "module",
   "scripts": {
-    "test": "ava",
-    "test:watch": "ava --watch",
-    "build": "tsc",
-    "build:watch": "tsc --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "lint": "xo",
-    "postinstall": "tsc && node ./node_modules/alfy/init.js",
-    "preuninstall": "node ./node_modules/alfy/cleanup.js"
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
   },
   "dependencies": {
     "alfy": "^1.1.0",

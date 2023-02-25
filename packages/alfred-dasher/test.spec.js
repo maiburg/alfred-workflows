@@ -1,7 +1,6 @@
-import test from 'ava';
 import alfyTest from 'alfy-test';
 
-test('Return the right result', async (t) => {
+test('Return the right result', async () => {
   const alfy = alfyTest();
   const input =
     '„Fix    Schwyz!“ !"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~quäkt Jürgen blöd vom Paß ÄÖÜ.';
@@ -9,7 +8,7 @@ test('Return the right result', async (t) => {
 
   const result = await alfy(input);
 
-  t.deepEqual(result, [
+  expect(result).toEqual([
     {
       title: output,
       subtitle: input + ' => ' + output,
@@ -17,4 +16,5 @@ test('Return the right result', async (t) => {
       icon: { type: 'fileicon', path: '~/Desktop' }
     }
   ]);
+
 });
