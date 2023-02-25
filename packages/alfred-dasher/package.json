@@ -17,17 +17,14 @@
   },
   "keywords": [],
   "license": "MIT",
-  "main": "index.js",
+  "exports": "./index.js",
+  "type": "module",
   "files": [
     "index.js",
     "icon.png",
     "info.plist"
   ],
-  "type": "module",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "lint": "xo",
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup"
   },
@@ -35,10 +32,5 @@
     "alfred-lib": "workspace:*",
     "alfy": "^1.1.0",
     "dashify": "^2.0.0"
-  },
-  "xo": {
-    "ignores": "*.js",
-    "space": true,
-    "prettier": true
   }
 }

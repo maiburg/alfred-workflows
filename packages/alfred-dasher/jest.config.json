@@ -1,5 +1,5 @@
 {
-  "displayName": "alfred-simple-notes",
+  "displayName": "alfred-dasher",
   "preset": "../../jest.preset.json",
   "testEnvironment": "node",
   "moduleFileExtensions": ["ts", "js"],

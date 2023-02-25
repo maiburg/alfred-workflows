@@ -17,27 +17,19 @@
   },
   "keywords": [],
   "license": "MIT",
-  "main": "index.js",
+  "exports": "./index.js",
+  "type": "module",
   "files": [
     "index.js",
     "icon.png",
     "info.plist"
   ],
-  "type": "module",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "lint": "xo",
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup"
   },
   "dependencies": {
     "alfy": "^1.1.0",
     "alfred-lib": "workspace:*"
-  },
-  "xo": {
-    "ignores": "*.js",
-    "space": true,
-    "prettier": true
   }
 }

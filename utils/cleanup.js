@@ -1,9 +1,9 @@
-const fs = require('fs');
-const glob = require('glob');
+import * as fs from 'node:fs';
+import * as glob from 'glob';
 
 /*
-  * This script deletes all generated .js files in the packages' folder.
-  * Files in the node_modules folder are ignored.
+ * This script deletes all generated .js files in the packages' folder.
+ * Files in the node_modules folder are ignored.
  */
 const cleanUp = () => {
   glob('packages/**/*.js', (err, files) => {

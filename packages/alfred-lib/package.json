@@ -5,18 +5,9 @@
   "keywords": [],
   "license": "MIT",
   "exports": "./index.js",
+  "type": "module",
   "files": [
     "index.js"
   ],
-  "type": "module",
-  "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "lint": "xo"
-  },
-  "xo": {
-    "ignores": "*.js",
-    "space": true,
-    "prettier": true
-  }
+  "scripts": {}
 }

@@ -16,5 +16,4 @@ test('Return the right result', async () => {
       icon: { type: 'fileicon', path: '~/Desktop' }
     }
   ]);
-
 });
