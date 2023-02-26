@@ -1,23 +1,23 @@
-import { fileHelper, datetimeHelper } from 'alfred-lib';
+import path from 'path';
+
+import { datetimeHelper, fileHelper } from 'alfred-lib';
+
+const filePath = '/Users/alex/Documents';
+const fileName = 'notes.md';
+
 export const notes = {
-    getNotes: () => {
-        return [
-            {
-                title: 'Note 1',
-                subtitle: 'This is the first note',
-                arg: 'note1'
-            },
-            {
-                title: 'Note 2',
-                subtitle: 'This is the second note',
-                arg: 'note2'
-            }
-        ];
-    },
-    writeNote: async (text) => {
-        const filePath = '/Users/alex/Documents';
-        const fileName = 'notes.md';
-        text = `* ${text} | ${datetimeHelper.timestamp()}`;
-        return await fileHelper.writeToFile(filePath, fileName, text);
-    }
+  writeNote: async (text) => {
+    const file = path.join(filePath, fileName);
+
+    text = getText(file, text);
+    return await fileHelper.writeToFile(file, text);
+  }
+};
+
+const getText = (file, text) => {
+  text = text.trim();
+
+  return fileHelper.fileHasContent(file)
+    ? `* ${text} | ${datetimeHelper.getTimestamp()}`
+    : `# ${datetimeHelper.getDate()}`;
 };
