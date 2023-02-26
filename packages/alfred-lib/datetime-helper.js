@@ -7,5 +7,7 @@ const minutes = date.getMinutes();
 const seconds = date.getSeconds();
 
 export const datetimeHelper = {
-  timestamp: () => `${day}.${month}.${year} ${hours}:${minutes}:${seconds}`
+  getDate: () => `${day}.${month}.${year}`,
+  getTime: () => `${hours}:${minutes}:${seconds}`,
+  getTimestamp: () => `${datetimeHelper.getDate()} ${datetimeHelper.getTime()}`
 };
