@@ -5,7 +5,7 @@ export const fileHelper = {
     text =
       fileExists(file) && fileHelper.fileHasContent(file) ? `\n${text}` : text;
 
-    await fs.appendFile(file, text, (err) => {
+    await fs.promises.appendFile(file, text, (err) => {
       if (err) {
         return console.log(err);
       }
