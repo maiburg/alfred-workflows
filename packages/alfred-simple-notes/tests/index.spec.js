@@ -1,6 +1,6 @@
 import alfyTest from 'alfy-test';
 
-describe('index', () => {
+describe('main()', () => {
   test('Dummy test', async () => {
     const alfy = alfyTest();
     const result = await alfy('Add note');
