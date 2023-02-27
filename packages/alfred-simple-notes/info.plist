@@ -116,7 +116,7 @@
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node index.js "$1 $test"</string>
+				<string>./node_modules/.bin/run-node index.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -130,25 +130,6 @@
 			<string>1D452288-F92D-4F7C-B50E-E57000ED3A63</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>14EF453B-18FA-4C72-90C4-C44EFCEF8196</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -183,13 +164,6 @@
 			<key>ypos</key>
 			<real>50</real>
 		</dict>
-		<key>14EF453B-18FA-4C72-90C4-C44EFCEF8196</key>
-		<dict>
-			<key>xpos</key>
-			<real>590</real>
-			<key>ypos</key>
-			<real>195</real>
-		</dict>
 		<key>1D452288-F92D-4F7C-B50E-E57000ED3A63</key>
 		<dict>
 			<key>xpos</key>
@@ -200,9 +174,9 @@
 		<key>4FB006EA-44E1-4B1D-84DD-7DD75D1B45AD</key>
 		<dict>
 			<key>xpos</key>
-			<real>585</real>
+			<real>565</real>
 			<key>ypos</key>
-			<real>50</real>
+			<real>150</real>
 		</dict>
 		<key>5A44882A-3735-4031-8F40-B15256045B2F</key>
 		<dict>
@@ -218,11 +192,32 @@
 			<key>config</key>
 			<dict>
 				<key>default</key>
+				<string>~/Documents/notes.md</string>
+				<key>filtermode</key>
+				<integer>2</integer>
+				<key>placeholder</key>
+				<string>~/Documents/notes.md</string>
+				<key>required</key>
+				<false/>
+			</dict>
+			<key>description</key>
+			<string>The file to save your notes to.</string>
+			<key>label</key>
+			<string>File</string>
+			<key>type</key>
+			<string>filepicker</string>
+			<key>variable</key>
+			<string>varFile</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
 				<string>Dies ist ein Test!!!!!</string>
 				<key>placeholder</key>
 				<string>test</string>
 				<key>required</key>
-				<true/>
+				<false/>
 				<key>trim</key>
 				<true/>
 			</dict>
@@ -233,7 +228,7 @@
 			<key>type</key>
 			<string>textfield</string>
 			<key>variable</key>
-			<string>test</string>
+			<string>varTest</string>
 		</dict>
 	</array>
 	<key>version</key>
