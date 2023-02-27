@@ -18,6 +18,7 @@ describe('fileHelper', () => {
     });
 
     test('write to file', async () => {
+      // Unit testing Node.js fs with mock-fs: https://www.emgoto.com/nodejs-mock-fs/
       mock({ '/tmp': { 'notes.md': '' } });
 
       await fileHelper.writeToFile(file, text);
