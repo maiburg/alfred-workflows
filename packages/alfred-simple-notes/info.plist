@@ -116,7 +116,7 @@
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node index.js "$1"</string>
+				<string>./node_modules/.bin/run-node index.js "$1 $test"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -213,7 +213,29 @@
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>Dies ist ein Test!!!!!</string>
+				<key>placeholder</key>
+				<string>test</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>test</string>
+			<key>label</key>
+			<string>test</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>test</string>
+		</dict>
+	</array>
 	<key>version</key>
 	<string>0.2.1</string>
 	<key>webaddress</key>
