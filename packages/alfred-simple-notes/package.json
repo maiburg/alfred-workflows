@@ -25,11 +25,13 @@
     "info.plist"
   ],
   "scripts": {
+    "test": "node --experimental-vm-modules ../../node_modules/jest/bin/jest.js --config jest.config.json",
+    "test:watch": "node --experimental-vm-modules ../../node_modules/jest/bin/jest.js --config jest.config.json --watch",
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup"
   },
   "dependencies": {
-    "alfy": "^1.1.0",
-    "alfred-lib": "workspace:*"
+    "alfred-lib": "workspace:*",
+    "alfy": "^1.1.0"
   }
 }
