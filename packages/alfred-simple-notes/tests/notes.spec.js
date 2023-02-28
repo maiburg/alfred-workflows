@@ -7,49 +7,39 @@ import { notes } from '../notes.js';
 describe('notes', () => {
   const text = 'some text';
   const file = '/tmp/notes.md';
+  const date = '01.01.2000';
+  const timestamp = '01.01.2000 00:00:00';
+  let writeToFileSpy, getDateSpy, getTimestampSpy;
 
-  describe('writeNote', () => {
-    test('call datetimeHelper.getTimestamp() if file exists', async () => {
-      jest.spyOn(fileHelper, 'fileHasContent').mockReturnValue(true);
-      const spy = jest.spyOn(datetimeHelper, 'getTimestamp');
+  beforeEach(() => {
+    writeToFileSpy = jest.spyOn(fileHelper, 'writeToFile');
+    getTimestampSpy = jest
+      .spyOn(datetimeHelper, 'getTimestamp')
+      .mockReturnValue(timestamp);
+    getDateSpy = jest.spyOn(datetimeHelper, 'getDate').mockReturnValue(date);
+  });
 
-      await notes.writeNote(text, file);
-
-      expect(spy).toHaveBeenCalled();
-    });
-
-    test('call fileHelper.writeToFile() if file exists', async () => {
-      jest.spyOn(fileHelper, 'fileHasContent').mockReturnValue(true);
-      const expected = [
-        '/tmp/notes.md',
-        '* some text | timestamp'
-      ];
-      const spy = jest.spyOn(fileHelper, 'writeToFile');
-      jest.spyOn(datetimeHelper, 'getTimestamp').mockReturnValue('timestamp');
-
-      await notes.writeNote(text, file);
-
-      expect(spy).toHaveBeenCalledWith(...expected);
-    });
-
-    test('call datetimeHelper.getDate() if file exists', async () => {
+  describe('writeNote()', () => {
+    test('write note WITH header if file has NO content', async () => {
       jest.spyOn(fileHelper, 'fileHasContent').mockReturnValue(false);
-      const spy = jest.spyOn(datetimeHelper, 'getDate');
+      const expected = [file, `# ${date}\n* some text | ${timestamp}`];
 
       await notes.writeNote(text, file);
 
-      expect(spy).toHaveBeenCalled();
+      expect(getTimestampSpy).toHaveBeenCalled();
+      expect(getDateSpy).toHaveBeenCalled();
+      expect(writeToFileSpy).toHaveBeenCalledWith(...expected);
     });
 
-    test('call fileHelper.writeToFile() if file exists', async () => {
-      jest.spyOn(fileHelper, 'fileHasContent').mockReturnValue(false);
-      const expected = ['/tmp/notes.md', '# date'];
-      const spy = jest.spyOn(fileHelper, 'writeToFile');
-      jest.spyOn(datetimeHelper, 'getDate').mockReturnValue('date');
+    test('write note WITHOUT header if file has content', async () => {
+      jest.spyOn(fileHelper, 'fileHasContent').mockReturnValue(true);
+      const expected = [file, `* some text | ${timestamp}`];
 
       await notes.writeNote(text, file);
 
-      expect(spy).toHaveBeenCalledWith(...expected);
+      expect(getTimestampSpy).toHaveBeenCalled();
+      expect(getDateSpy).not.toHaveBeenCalled();
+      expect(writeToFileSpy).toHaveBeenCalledWith(...expected);
     });
   });
 });

@@ -8,9 +8,9 @@ export const notes = {
 };
 
 const getText = (file, text) => {
-  text = text.trim();
+  const task = `* ${text.trim()} | ${datetimeHelper.getTimestamp()}`;
 
   return fileHelper.fileHasContent(file)
-    ? `* ${text} | ${datetimeHelper.getTimestamp()}`
-    : `# ${datetimeHelper.getDate()}`;
+    ? task
+    : `# ${datetimeHelper.getDate()}\n${task}`;
 };
